@@ -1,6 +1,6 @@
 #ifndef S7READ_H
 #define S7READ_H
-#include "S7Connection.h"
+#include "S7/S7Connection/S7Connection.h"
 
 /*
 ********* AREA TABLE ***********
@@ -24,10 +24,26 @@ int value;
 
 public:
 S7Read();
-S7Read(int Area, uint16_t DBNumber, uint16_t Start, uint16_t Amount, void *pUsrData);
+S7Read(uint16_t DBNumber, uint16_t Amount, void *pUsrData);
 void Execute();
 int getValue();
 
 }; 
 
 #endif
+
+/*
+S7Conection
+Static S7Client
+S7Connect()
+
+S7Read  >> S7Connection
+int Area;
+uint16_t DBNumber;
+uint16_t Start;
+uint16_t Amount;
+void *pUsrData;
+int value;
+void Execute()
+
+*/

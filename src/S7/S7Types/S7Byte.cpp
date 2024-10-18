@@ -1,4 +1,4 @@
-#include "S7/S7Byte.h"
+#include "S7/S7Types/S7Byte.h"
 
 
 S7Byte::S7Byte(void *Buffer, int index){

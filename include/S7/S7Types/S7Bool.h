@@ -1,6 +1,6 @@
 #ifndef S7BOOL_H
 #define S7BOOL_H
-#include "S7/S7Type.h"
+#include "S7/S7Types/S7Type.h"
 
 class S7Bool : public S7Type{
 

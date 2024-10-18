@@ -4,6 +4,7 @@
 #include "..\lib/Settimino/Settimino.h"
 #include "..\lib/Settimino/Platform.h"
 #include "Settimino.h"
+#include "S7/S7Connection/S7Read.h"
 
 
 class S7Type{

@@ -1,6 +1,6 @@
 #ifndef S7WORD_H
 #define S7WORD_H
-#include "S7/S7Type.h"
+#include "S7/S7Types/S7Type.h"
 
 class S7Word : public S7Type
 {

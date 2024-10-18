@@ -1,4 +1,4 @@
-#include "S7/S7Bool.h"
+#include "S7/S7Types/S7Bool.h"
 
 S7Bool::S7Bool(void *Buffer, int ByteIndex, byte BitIndex){
     this->Buf = Buffer;

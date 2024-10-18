@@ -1,12 +1,13 @@
-#include "S7Connection/S7Read.h"
+#include "S7/S7Connection/S7Read.h"
 
 // int ReadArea(int Area, uint16_t DBNumber, uint16_t Start, uint16_t Amount, void *pUsrData);
 
-S7Read::S7Read(int Area, uint16_t DBNumber, uint16_t Start, uint16_t Amount, void *pUsrData)
+
+S7Read::S7Read(uint16_t DBNumber, uint16_t Amount, void *pUsrData)
 {
-    this->Area = Area;
+    this->Area = S7AreaDB;
     this->DBNumber = DBNumber;
-    this->Start = Start;
+    this->Start = 0;
     this->Amount = Amount;
     this->pUsrData = pUsrData;
     this->value = 0;

@@ -1,4 +1,4 @@
-#include "S7Connection/S7Connection.h"
+#include "S7/S7Connection/S7Connection.h"
 
 
 bool S7Connection::S7Connect(){
